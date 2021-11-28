@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+/* #C5EBD6
+   #83E1AD
+   #3DDC84
+   #2FA866
+   #063D1E
+
+   MAIN
+   MIN-WIDTH: 400PX
+   MAX-WIDTH:800PX
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'ANDROID';
+    src: url(../fontes/idroid.otf);
+}
+
+:root{
+    --cor0:#C5EBD6;
+    --cor1:#83E1AD;
+    --cor2:#3DDC84;
+    --cor3:#2FA866;
+    --cor4:#1A5C37;
+    --cor5:#063d1e;
+
+    --fonte0: Arial,Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'Android', sans-serif;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    font-family: var(--fonte0);
+    background-color: var(--cor0);
+    
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor3),var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+    
+}
+header h1{
+    font-family: var(--fonte1);
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-shadow: 1px 2px black;
+    font-weight: normal;
+    color: white;
+    
+}
+header>p{
+    font-family: var(--fonte0);
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 0px 2px black;
+}
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px black;
+    margin: 0.px;
+
+    
+}
+
+nav>a{
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 2.2em
+    
+
+    
+  
+}
+
+
+
+nav>a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+main{
+    min-width: 240px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 275);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1{
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;
+   
+}
+main h2{
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right,var(--cor1),transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+    
+main strong{
+    color: var(--cor3);
+    font-weight: bold;
+    
+}
+main strong:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+main p{
+    margin:15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.2em;
+    font-size: 1em;
+    
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor0);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+
+img{
+    width: 100%;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.412);
+    margin-top: -25px;
+    margin-left: -17px;
+    margin-right: -17px;
+    
+
+}
+aside>ul{
+    
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    
+    line-height: 2.2em;
+   
+
+    
+}
+aside>h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+aside>p{
+    padding: 6px;
+    
+}
+
+aside a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor0);
+}
+aside a:hover{
+     text-decoration: underline;
+    color: var(--cor5);
+}
+div.bugdroid{
+    max-width: 320px;
+    margin: auto;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+
+
+
+   
